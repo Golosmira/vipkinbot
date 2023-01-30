@@ -3,15 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	res := sum(5, 2) + sum(7, 9) + sum(9, 13) + sum(1, 9)
-
-	fmt.Println(res)
+	s := print("Магамед", 31)
+	fmt.Println(s)
 }
+func print(name string, age int) string {
 
-func sum(a int, b int) int {
-	s := (a + b) * 2
+	res := fmt.Sprintf("Меня зовут %s и мне %d год", name, age)
 
-	return s
+	return res
 }
 
 // Задача
