@@ -1,11 +1,11 @@
 package main
 
-// Проверка git status
+// Проверка индексации и не только git status
 // Шаг 1
 // Я создаю меняю или удоляю фаил
 // Шаг 2
 // Я индексирую изменения нажимаю + или в терменале пишу git add
-// пример git add chapter3.go
+// пример git add .\chapter\chapter3.go
 // Шаг 3
 // Создаю коммит commit можно на прожать коммит в ВСКоде или в терменале написать git commit -m "название commit"
 // пример git commit -m "chapten3"
