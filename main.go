@@ -8,7 +8,7 @@ func main() {
 }
 func print(name string, age int) string {
 
-	res := fmt.Sprintf("Меня зовут %s и мне %d год", name, age)
+	res := fmt.Sprintf("Меня зовут %s и мне %d года", name, age)
 
 	return res
 }
