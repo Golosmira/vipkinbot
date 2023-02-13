@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	s := print("Магомеды", 31)
+	s := print("Артём", 44)
 	fmt.Println(s)
 }
 func print(name string, age int) string {
