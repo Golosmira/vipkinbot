@@ -5,16 +5,16 @@ import (
 	"strings"
 )
 
-// Operation function
+// Operation function // Функция управления
 type Operate func(int, int) int
 
-// Structure of operands and the operator
+// Structure of operands and the operator // Структура операндов и оператор
 type Expression struct {
 	X, Y      int
 	Operation Operate
 }
 
-// Map of single digits
+// Map of single digits // Карта однозначных чисел
 var singledigits = map[string]int{
 	"0": 0, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9,
 }
