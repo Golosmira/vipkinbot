@@ -19,13 +19,13 @@ var singledigits = map[string]int{
 	"0": 0, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9,
 }
 
-// Map of operators "+" "-" and funcs
+// Map of operators "+" "-" and funcs Карта операторов "+" "-" и функций
 var operators = map[string]Operate{
 	"+": func(x, y int) int { return x + y },
 	"-": func(x, y int) int { return x - y },
 }
 
-// Filling Expression structure
+// Filling Expression structure Заполняющая структура выражения
 func (exp Expression) FillingExpression(stringarr []string) Expression {
 	for _, elem := range stringarr {
 		_, ok := singledigits[elem]
@@ -41,7 +41,7 @@ func (exp Expression) FillingExpression(stringarr []string) Expression {
 	return Expression{exp.X, exp.Y, exp.Operation}
 }
 
-// Preparing input condition with trim spaces
+// Preparing input condition with trim spaces Подготовка входного условия с помощью пробелов для обрезки
 func PreparingInputCondition(condition string) []string {
 	stringArr := []string{}
 	conditionArr := strings.Split(condition, "")
