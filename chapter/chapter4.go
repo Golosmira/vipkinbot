@@ -57,7 +57,7 @@ func PreparingInputCondition(condition string) []string {
 func main() {
 	inputCondition := "1+ 1" // Второе условие "2-1 + 2"
 	preparedCondition := PreparingInputCondition(inputCondition)
-	fmt.Println("Prepared condition: ", PreparingInputCondition(inputCondition))
+	fmt.Println("Подготовленное состояние: ", PreparingInputCondition(inputCondition))
 
 	expression := Expression{}
 
@@ -69,6 +69,6 @@ func main() {
 		Operation: completeExpression.Operation,
 	}
 
-	fmt.Println("Result of operation: ", result.Operation(result.X, result.Y))
+	fmt.Println("Результат операции: ", result.Operation(result.X, result.Y))
 
 }
