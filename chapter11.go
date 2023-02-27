@@ -5,7 +5,7 @@ import ( "log" "strconv"
 "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
-func main() { bot, err := tgbotapi.NewBotAPI("5837275423:AAGLDXrqUmlKJl5crn4ifMKE6VBwQP5l4Us") if err != nil { log.Panic(err) }
+func main() { bot, err := tgbotapi.NewBotAPI("") if err != nil { log.Panic(err) }
 
 // bot.Debug = true
 
